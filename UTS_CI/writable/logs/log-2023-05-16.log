@@ -1,0 +1,456 @@
+ERROR - 2023-05-16 13:05:19 --> mysqli_sql_exception: Unknown column 'prodi.id_prdi' in 'on clause' in C:\Users\HP\Desktop\Bintang Fajar Julio_2007411033_CI UTS\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\HP\Desktop\Bintang Fajar Julio_2007411033_CI UTS\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\HP\Desktop\Bintang Fajar Julio_2007411033_CI UTS\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\HP\Desktop\Bintang Fajar Julio_2007411033_CI UTS\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\HP\Desktop\Bintang Fajar Julio_2007411033_CI UTS\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\HP\Desktop\Bintang Fajar Julio_2007411033_CI UTS\system\Model.php(840): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\HP\Desktop\Bintang Fajar Julio_2007411033_CI UTS\app\Controllers\MahasiswaController.php(51): CodeIgniter\Model->__call('get', Array)
+#6 C:\Users\HP\Desktop\Bintang Fajar Julio_2007411033_CI UTS\system\CodeIgniter.php(934): App\Controllers\MahasiswaController->fetch()
+#7 C:\Users\HP\Desktop\Bintang Fajar Julio_2007411033_CI UTS\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MahasiswaController))
+#8 C:\Users\HP\Desktop\Bintang Fajar Julio_2007411033_CI UTS\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\HP\Desktop\Bintang Fajar Julio_2007411033_CI UTS\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\HP\Desktop\Bintang Fajar Julio_2007411033_CI UTS\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\HP\\Des...')
+#11 {main}
+CRITICAL - 2023-05-16 13:05:19 --> Unknown column 'prodi.id_prdi' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `mahasiswa`
+JOIN `prodi` ON `prodi`.`id_prdi` = `mahasiswa`.`prodi_mahasiswa`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `mahasiswa`
+JOIN `prodi` ON `prodi`.`id_prdi` = `mahasiswa`.`prodi_mahasiswa`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `mahasiswa`
+JOIN `prodi` ON `prodi`.`id_prdi` = `mahasiswa`.`prodi_mahasiswa`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `mahasiswa`
+JOIN `prodi` ON `prodi`.`id_prdi` = `mahasiswa`.`prodi_mahasiswa`', [], false)
+ 5 SYSTEMPATH\Model.php(840): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\MahasiswaController.php(51): CodeIgniter\Model->__call('get', [])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\MahasiswaController->fetch()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MahasiswaController))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\HP\\Desktop\\Bintang Fajar Julio_2007411033_CI UTS\\public\\index.php')
+ERROR - 2023-05-16 13:05:21 --> mysqli_sql_exception: Unknown column 'prodi.id_prdi' in 'on clause' in C:\Users\HP\Desktop\Bintang Fajar Julio_2007411033_CI UTS\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\HP\Desktop\Bintang Fajar Julio_2007411033_CI UTS\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\HP\Desktop\Bintang Fajar Julio_2007411033_CI UTS\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\HP\Desktop\Bintang Fajar Julio_2007411033_CI UTS\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\HP\Desktop\Bintang Fajar Julio_2007411033_CI UTS\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\HP\Desktop\Bintang Fajar Julio_2007411033_CI UTS\system\Model.php(840): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\HP\Desktop\Bintang Fajar Julio_2007411033_CI UTS\app\Controllers\MahasiswaController.php(51): CodeIgniter\Model->__call('get', Array)
+#6 C:\Users\HP\Desktop\Bintang Fajar Julio_2007411033_CI UTS\system\CodeIgniter.php(934): App\Controllers\MahasiswaController->fetch()
+#7 C:\Users\HP\Desktop\Bintang Fajar Julio_2007411033_CI UTS\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MahasiswaController))
+#8 C:\Users\HP\Desktop\Bintang Fajar Julio_2007411033_CI UTS\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\HP\Desktop\Bintang Fajar Julio_2007411033_CI UTS\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\HP\Desktop\Bintang Fajar Julio_2007411033_CI UTS\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\HP\\Des...')
+#11 {main}
+CRITICAL - 2023-05-16 13:05:21 --> Unknown column 'prodi.id_prdi' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `mahasiswa`
+JOIN `prodi` ON `prodi`.`id_prdi` = `mahasiswa`.`prodi_mahasiswa`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `mahasiswa`
+JOIN `prodi` ON `prodi`.`id_prdi` = `mahasiswa`.`prodi_mahasiswa`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `mahasiswa`
+JOIN `prodi` ON `prodi`.`id_prdi` = `mahasiswa`.`prodi_mahasiswa`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `mahasiswa`
+JOIN `prodi` ON `prodi`.`id_prdi` = `mahasiswa`.`prodi_mahasiswa`', [], false)
+ 5 SYSTEMPATH\Model.php(840): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\MahasiswaController.php(51): CodeIgniter\Model->__call('get', [])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\MahasiswaController->fetch()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MahasiswaController))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\HP\\Desktop\\Bintang Fajar Julio_2007411033_CI UTS\\public\\index.php')
+ERROR - 2023-05-16 13:05:33 --> mysqli_sql_exception: Unknown column 'prodi.id_prdi' in 'on clause' in C:\Users\HP\Desktop\Bintang Fajar Julio_2007411033_CI UTS\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\HP\Desktop\Bintang Fajar Julio_2007411033_CI UTS\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\HP\Desktop\Bintang Fajar Julio_2007411033_CI UTS\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\HP\Desktop\Bintang Fajar Julio_2007411033_CI UTS\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\HP\Desktop\Bintang Fajar Julio_2007411033_CI UTS\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\HP\Desktop\Bintang Fajar Julio_2007411033_CI UTS\system\Model.php(840): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\HP\Desktop\Bintang Fajar Julio_2007411033_CI UTS\app\Controllers\MahasiswaController.php(51): CodeIgniter\Model->__call('get', Array)
+#6 C:\Users\HP\Desktop\Bintang Fajar Julio_2007411033_CI UTS\system\CodeIgniter.php(934): App\Controllers\MahasiswaController->fetch()
+#7 C:\Users\HP\Desktop\Bintang Fajar Julio_2007411033_CI UTS\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MahasiswaController))
+#8 C:\Users\HP\Desktop\Bintang Fajar Julio_2007411033_CI UTS\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\HP\Desktop\Bintang Fajar Julio_2007411033_CI UTS\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\HP\Desktop\Bintang Fajar Julio_2007411033_CI UTS\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\HP\\Des...')
+#11 {main}
+CRITICAL - 2023-05-16 13:05:33 --> Unknown column 'prodi.id_prdi' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `mahasiswa`
+JOIN `prodi` ON `prodi`.`id_prdi` = `mahasiswa`.`prodi_mahasiswa`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `mahasiswa`
+JOIN `prodi` ON `prodi`.`id_prdi` = `mahasiswa`.`prodi_mahasiswa`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `mahasiswa`
+JOIN `prodi` ON `prodi`.`id_prdi` = `mahasiswa`.`prodi_mahasiswa`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `mahasiswa`
+JOIN `prodi` ON `prodi`.`id_prdi` = `mahasiswa`.`prodi_mahasiswa`', [], false)
+ 5 SYSTEMPATH\Model.php(840): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\MahasiswaController.php(51): CodeIgniter\Model->__call('get', [])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\MahasiswaController->fetch()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MahasiswaController))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\HP\\Desktop\\Bintang Fajar Julio_2007411033_CI UTS\\public\\index.php')
+ERROR - 2023-05-16 13:05:38 --> mysqli_sql_exception: Unknown column 'prodi.id_prdi' in 'on clause' in C:\Users\HP\Desktop\Bintang Fajar Julio_2007411033_CI UTS\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\HP\Desktop\Bintang Fajar Julio_2007411033_CI UTS\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\HP\Desktop\Bintang Fajar Julio_2007411033_CI UTS\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\HP\Desktop\Bintang Fajar Julio_2007411033_CI UTS\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\HP\Desktop\Bintang Fajar Julio_2007411033_CI UTS\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\HP\Desktop\Bintang Fajar Julio_2007411033_CI UTS\system\Model.php(840): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\HP\Desktop\Bintang Fajar Julio_2007411033_CI UTS\app\Controllers\MahasiswaController.php(51): CodeIgniter\Model->__call('get', Array)
+#6 C:\Users\HP\Desktop\Bintang Fajar Julio_2007411033_CI UTS\system\CodeIgniter.php(934): App\Controllers\MahasiswaController->fetch()
+#7 C:\Users\HP\Desktop\Bintang Fajar Julio_2007411033_CI UTS\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MahasiswaController))
+#8 C:\Users\HP\Desktop\Bintang Fajar Julio_2007411033_CI UTS\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\HP\Desktop\Bintang Fajar Julio_2007411033_CI UTS\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\HP\Desktop\Bintang Fajar Julio_2007411033_CI UTS\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\HP\\Des...')
+#11 {main}
+CRITICAL - 2023-05-16 13:05:38 --> Unknown column 'prodi.id_prdi' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `mahasiswa`
+JOIN `prodi` ON `prodi`.`id_prdi` = `mahasiswa`.`prodi_mahasiswa`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `mahasiswa`
+JOIN `prodi` ON `prodi`.`id_prdi` = `mahasiswa`.`prodi_mahasiswa`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `mahasiswa`
+JOIN `prodi` ON `prodi`.`id_prdi` = `mahasiswa`.`prodi_mahasiswa`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `mahasiswa`
+JOIN `prodi` ON `prodi`.`id_prdi` = `mahasiswa`.`prodi_mahasiswa`', [], false)
+ 5 SYSTEMPATH\Model.php(840): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\MahasiswaController.php(51): CodeIgniter\Model->__call('get', [])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\MahasiswaController->fetch()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MahasiswaController))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\HP\\Desktop\\Bintang Fajar Julio_2007411033_CI UTS\\public\\index.php')
+ERROR - 2023-05-16 13:05:51 --> mysqli_sql_exception: Unknown column 'prodi.id_prdi' in 'on clause' in C:\Users\HP\Desktop\Bintang Fajar Julio_2007411033_CI UTS\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\HP\Desktop\Bintang Fajar Julio_2007411033_CI UTS\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\HP\Desktop\Bintang Fajar Julio_2007411033_CI UTS\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\HP\Desktop\Bintang Fajar Julio_2007411033_CI UTS\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\HP\Desktop\Bintang Fajar Julio_2007411033_CI UTS\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\HP\Desktop\Bintang Fajar Julio_2007411033_CI UTS\system\Model.php(840): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\HP\Desktop\Bintang Fajar Julio_2007411033_CI UTS\app\Controllers\MahasiswaController.php(51): CodeIgniter\Model->__call('get', Array)
+#6 C:\Users\HP\Desktop\Bintang Fajar Julio_2007411033_CI UTS\system\CodeIgniter.php(934): App\Controllers\MahasiswaController->fetch()
+#7 C:\Users\HP\Desktop\Bintang Fajar Julio_2007411033_CI UTS\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MahasiswaController))
+#8 C:\Users\HP\Desktop\Bintang Fajar Julio_2007411033_CI UTS\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\HP\Desktop\Bintang Fajar Julio_2007411033_CI UTS\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\HP\Desktop\Bintang Fajar Julio_2007411033_CI UTS\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\HP\\Des...')
+#11 {main}
+CRITICAL - 2023-05-16 13:05:51 --> Unknown column 'prodi.id_prdi' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `mahasiswa`
+JOIN `prodi` ON `prodi`.`id_prdi` = `mahasiswa`.`prodi_mahasiswa`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `mahasiswa`
+JOIN `prodi` ON `prodi`.`id_prdi` = `mahasiswa`.`prodi_mahasiswa`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `mahasiswa`
+JOIN `prodi` ON `prodi`.`id_prdi` = `mahasiswa`.`prodi_mahasiswa`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `mahasiswa`
+JOIN `prodi` ON `prodi`.`id_prdi` = `mahasiswa`.`prodi_mahasiswa`', [], false)
+ 5 SYSTEMPATH\Model.php(840): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\MahasiswaController.php(51): CodeIgniter\Model->__call('get', [])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\MahasiswaController->fetch()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MahasiswaController))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\HP\\Desktop\\Bintang Fajar Julio_2007411033_CI UTS\\public\\index.php')
+ERROR - 2023-05-16 13:06:03 --> mysqli_sql_exception: Unknown column 'prodi.id_prdi' in 'on clause' in C:\Users\HP\Desktop\Bintang Fajar Julio_2007411033_CI UTS\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\HP\Desktop\Bintang Fajar Julio_2007411033_CI UTS\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\HP\Desktop\Bintang Fajar Julio_2007411033_CI UTS\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\HP\Desktop\Bintang Fajar Julio_2007411033_CI UTS\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\HP\Desktop\Bintang Fajar Julio_2007411033_CI UTS\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\HP\Desktop\Bintang Fajar Julio_2007411033_CI UTS\system\Model.php(840): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\HP\Desktop\Bintang Fajar Julio_2007411033_CI UTS\app\Controllers\MahasiswaController.php(51): CodeIgniter\Model->__call('get', Array)
+#6 C:\Users\HP\Desktop\Bintang Fajar Julio_2007411033_CI UTS\system\CodeIgniter.php(934): App\Controllers\MahasiswaController->fetch()
+#7 C:\Users\HP\Desktop\Bintang Fajar Julio_2007411033_CI UTS\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MahasiswaController))
+#8 C:\Users\HP\Desktop\Bintang Fajar Julio_2007411033_CI UTS\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\HP\Desktop\Bintang Fajar Julio_2007411033_CI UTS\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\HP\Desktop\Bintang Fajar Julio_2007411033_CI UTS\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\HP\\Des...')
+#11 {main}
+CRITICAL - 2023-05-16 13:06:03 --> Unknown column 'prodi.id_prdi' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `mahasiswa`
+JOIN `prodi` ON `prodi`.`id_prdi` = `mahasiswa`.`prodi_mahasiswa`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `mahasiswa`
+JOIN `prodi` ON `prodi`.`id_prdi` = `mahasiswa`.`prodi_mahasiswa`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `mahasiswa`
+JOIN `prodi` ON `prodi`.`id_prdi` = `mahasiswa`.`prodi_mahasiswa`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `mahasiswa`
+JOIN `prodi` ON `prodi`.`id_prdi` = `mahasiswa`.`prodi_mahasiswa`', [], false)
+ 5 SYSTEMPATH\Model.php(840): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\MahasiswaController.php(51): CodeIgniter\Model->__call('get', [])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\MahasiswaController->fetch()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MahasiswaController))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\HP\\Desktop\\Bintang Fajar Julio_2007411033_CI UTS\\public\\index.php')
+ERROR - 2023-05-16 13:06:15 --> mysqli_sql_exception: Unknown column 'prodi.id_prdi' in 'on clause' in C:\Users\HP\Desktop\Bintang Fajar Julio_2007411033_CI UTS\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\HP\Desktop\Bintang Fajar Julio_2007411033_CI UTS\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\HP\Desktop\Bintang Fajar Julio_2007411033_CI UTS\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\HP\Desktop\Bintang Fajar Julio_2007411033_CI UTS\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\HP\Desktop\Bintang Fajar Julio_2007411033_CI UTS\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\HP\Desktop\Bintang Fajar Julio_2007411033_CI UTS\system\Model.php(840): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\HP\Desktop\Bintang Fajar Julio_2007411033_CI UTS\app\Controllers\MahasiswaController.php(51): CodeIgniter\Model->__call('get', Array)
+#6 C:\Users\HP\Desktop\Bintang Fajar Julio_2007411033_CI UTS\system\CodeIgniter.php(934): App\Controllers\MahasiswaController->fetch()
+#7 C:\Users\HP\Desktop\Bintang Fajar Julio_2007411033_CI UTS\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MahasiswaController))
+#8 C:\Users\HP\Desktop\Bintang Fajar Julio_2007411033_CI UTS\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\HP\Desktop\Bintang Fajar Julio_2007411033_CI UTS\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\HP\Desktop\Bintang Fajar Julio_2007411033_CI UTS\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\HP\\Des...')
+#11 {main}
+CRITICAL - 2023-05-16 13:06:15 --> Unknown column 'prodi.id_prdi' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `mahasiswa`
+JOIN `prodi` ON `prodi`.`id_prdi` = `mahasiswa`.`prodi_mahasiswa`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `mahasiswa`
+JOIN `prodi` ON `prodi`.`id_prdi` = `mahasiswa`.`prodi_mahasiswa`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `mahasiswa`
+JOIN `prodi` ON `prodi`.`id_prdi` = `mahasiswa`.`prodi_mahasiswa`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `mahasiswa`
+JOIN `prodi` ON `prodi`.`id_prdi` = `mahasiswa`.`prodi_mahasiswa`', [], false)
+ 5 SYSTEMPATH\Model.php(840): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\MahasiswaController.php(51): CodeIgniter\Model->__call('get', [])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\MahasiswaController->fetch()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MahasiswaController))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\HP\\Desktop\\Bintang Fajar Julio_2007411033_CI UTS\\public\\index.php')
+ERROR - 2023-05-16 13:06:31 --> mysqli_sql_exception: Unknown column 'prodi.id_prdi' in 'on clause' in C:\Users\HP\Desktop\Bintang Fajar Julio_2007411033_CI UTS\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\HP\Desktop\Bintang Fajar Julio_2007411033_CI UTS\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\HP\Desktop\Bintang Fajar Julio_2007411033_CI UTS\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\HP\Desktop\Bintang Fajar Julio_2007411033_CI UTS\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\HP\Desktop\Bintang Fajar Julio_2007411033_CI UTS\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\HP\Desktop\Bintang Fajar Julio_2007411033_CI UTS\system\Model.php(840): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\HP\Desktop\Bintang Fajar Julio_2007411033_CI UTS\app\Controllers\MahasiswaController.php(51): CodeIgniter\Model->__call('get', Array)
+#6 C:\Users\HP\Desktop\Bintang Fajar Julio_2007411033_CI UTS\system\CodeIgniter.php(934): App\Controllers\MahasiswaController->fetch()
+#7 C:\Users\HP\Desktop\Bintang Fajar Julio_2007411033_CI UTS\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MahasiswaController))
+#8 C:\Users\HP\Desktop\Bintang Fajar Julio_2007411033_CI UTS\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\HP\Desktop\Bintang Fajar Julio_2007411033_CI UTS\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\HP\Desktop\Bintang Fajar Julio_2007411033_CI UTS\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\HP\\Des...')
+#11 {main}
+CRITICAL - 2023-05-16 13:06:31 --> Unknown column 'prodi.id_prdi' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `mahasiswa`
+JOIN `prodi` ON `prodi`.`id_prdi` = `mahasiswa`.`prodi_mahasiswa`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `mahasiswa`
+JOIN `prodi` ON `prodi`.`id_prdi` = `mahasiswa`.`prodi_mahasiswa`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `mahasiswa`
+JOIN `prodi` ON `prodi`.`id_prdi` = `mahasiswa`.`prodi_mahasiswa`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `mahasiswa`
+JOIN `prodi` ON `prodi`.`id_prdi` = `mahasiswa`.`prodi_mahasiswa`', [], false)
+ 5 SYSTEMPATH\Model.php(840): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\MahasiswaController.php(51): CodeIgniter\Model->__call('get', [])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\MahasiswaController->fetch()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MahasiswaController))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\HP\\Desktop\\Bintang Fajar Julio_2007411033_CI UTS\\public\\index.php')
+ERROR - 2023-05-16 13:07:01 --> mysqli_sql_exception: Unknown column 'prodi.id_prdi' in 'on clause' in C:\Users\HP\Desktop\Bintang Fajar Julio_2007411033_CI UTS\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\HP\Desktop\Bintang Fajar Julio_2007411033_CI UTS\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\HP\Desktop\Bintang Fajar Julio_2007411033_CI UTS\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\HP\Desktop\Bintang Fajar Julio_2007411033_CI UTS\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\HP\Desktop\Bintang Fajar Julio_2007411033_CI UTS\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\HP\Desktop\Bintang Fajar Julio_2007411033_CI UTS\system\Model.php(840): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\HP\Desktop\Bintang Fajar Julio_2007411033_CI UTS\app\Controllers\MahasiswaController.php(51): CodeIgniter\Model->__call('get', Array)
+#6 C:\Users\HP\Desktop\Bintang Fajar Julio_2007411033_CI UTS\system\CodeIgniter.php(934): App\Controllers\MahasiswaController->fetch()
+#7 C:\Users\HP\Desktop\Bintang Fajar Julio_2007411033_CI UTS\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MahasiswaController))
+#8 C:\Users\HP\Desktop\Bintang Fajar Julio_2007411033_CI UTS\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\HP\Desktop\Bintang Fajar Julio_2007411033_CI UTS\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\HP\Desktop\Bintang Fajar Julio_2007411033_CI UTS\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\HP\\Des...')
+#11 {main}
+CRITICAL - 2023-05-16 13:07:01 --> Unknown column 'prodi.id_prdi' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `mahasiswa`
+JOIN `prodi` ON `prodi`.`id_prdi` = `mahasiswa`.`prodi_mahasiswa`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `mahasiswa`
+JOIN `prodi` ON `prodi`.`id_prdi` = `mahasiswa`.`prodi_mahasiswa`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `mahasiswa`
+JOIN `prodi` ON `prodi`.`id_prdi` = `mahasiswa`.`prodi_mahasiswa`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `mahasiswa`
+JOIN `prodi` ON `prodi`.`id_prdi` = `mahasiswa`.`prodi_mahasiswa`', [], false)
+ 5 SYSTEMPATH\Model.php(840): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\MahasiswaController.php(51): CodeIgniter\Model->__call('get', [])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\MahasiswaController->fetch()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MahasiswaController))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\HP\\Desktop\\Bintang Fajar Julio_2007411033_CI UTS\\public\\index.php')
+ERROR - 2023-05-16 13:07:04 --> mysqli_sql_exception: Unknown column 'prodi.id_prdi' in 'on clause' in C:\Users\HP\Desktop\Bintang Fajar Julio_2007411033_CI UTS\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\HP\Desktop\Bintang Fajar Julio_2007411033_CI UTS\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\HP\Desktop\Bintang Fajar Julio_2007411033_CI UTS\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\HP\Desktop\Bintang Fajar Julio_2007411033_CI UTS\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\HP\Desktop\Bintang Fajar Julio_2007411033_CI UTS\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\HP\Desktop\Bintang Fajar Julio_2007411033_CI UTS\system\Model.php(840): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\HP\Desktop\Bintang Fajar Julio_2007411033_CI UTS\app\Controllers\MahasiswaController.php(51): CodeIgniter\Model->__call('get', Array)
+#6 C:\Users\HP\Desktop\Bintang Fajar Julio_2007411033_CI UTS\system\CodeIgniter.php(934): App\Controllers\MahasiswaController->fetch()
+#7 C:\Users\HP\Desktop\Bintang Fajar Julio_2007411033_CI UTS\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MahasiswaController))
+#8 C:\Users\HP\Desktop\Bintang Fajar Julio_2007411033_CI UTS\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\HP\Desktop\Bintang Fajar Julio_2007411033_CI UTS\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\HP\Desktop\Bintang Fajar Julio_2007411033_CI UTS\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\HP\\Des...')
+#11 {main}
+CRITICAL - 2023-05-16 13:07:04 --> Unknown column 'prodi.id_prdi' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `mahasiswa`
+JOIN `prodi` ON `prodi`.`id_prdi` = `mahasiswa`.`prodi_mahasiswa`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `mahasiswa`
+JOIN `prodi` ON `prodi`.`id_prdi` = `mahasiswa`.`prodi_mahasiswa`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `mahasiswa`
+JOIN `prodi` ON `prodi`.`id_prdi` = `mahasiswa`.`prodi_mahasiswa`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `mahasiswa`
+JOIN `prodi` ON `prodi`.`id_prdi` = `mahasiswa`.`prodi_mahasiswa`', [], false)
+ 5 SYSTEMPATH\Model.php(840): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\MahasiswaController.php(51): CodeIgniter\Model->__call('get', [])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\MahasiswaController->fetch()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MahasiswaController))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\HP\\Desktop\\Bintang Fajar Julio_2007411033_CI UTS\\public\\index.php')
+ERROR - 2023-05-16 13:09:05 --> mysqli_sql_exception: Unknown column 'prodi.id_prdi' in 'on clause' in C:\Users\HP\Desktop\Bintang Fajar Julio_2007411033_CI UTS\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\HP\Desktop\Bintang Fajar Julio_2007411033_CI UTS\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\HP\Desktop\Bintang Fajar Julio_2007411033_CI UTS\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\HP\Desktop\Bintang Fajar Julio_2007411033_CI UTS\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\HP\Desktop\Bintang Fajar Julio_2007411033_CI UTS\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\HP\Desktop\Bintang Fajar Julio_2007411033_CI UTS\system\Model.php(840): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\HP\Desktop\Bintang Fajar Julio_2007411033_CI UTS\app\Controllers\MahasiswaController.php(51): CodeIgniter\Model->__call('get', Array)
+#6 C:\Users\HP\Desktop\Bintang Fajar Julio_2007411033_CI UTS\system\CodeIgniter.php(934): App\Controllers\MahasiswaController->fetch()
+#7 C:\Users\HP\Desktop\Bintang Fajar Julio_2007411033_CI UTS\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MahasiswaController))
+#8 C:\Users\HP\Desktop\Bintang Fajar Julio_2007411033_CI UTS\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\HP\Desktop\Bintang Fajar Julio_2007411033_CI UTS\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\HP\Desktop\Bintang Fajar Julio_2007411033_CI UTS\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\HP\\Des...')
+#11 {main}
+CRITICAL - 2023-05-16 13:09:05 --> Unknown column 'prodi.id_prdi' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `mahasiswa`
+JOIN `prodi` ON `prodi`.`id_prdi` = `mahasiswa`.`prodi_mahasiswa`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `mahasiswa`
+JOIN `prodi` ON `prodi`.`id_prdi` = `mahasiswa`.`prodi_mahasiswa`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `mahasiswa`
+JOIN `prodi` ON `prodi`.`id_prdi` = `mahasiswa`.`prodi_mahasiswa`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `mahasiswa`
+JOIN `prodi` ON `prodi`.`id_prdi` = `mahasiswa`.`prodi_mahasiswa`', [], false)
+ 5 SYSTEMPATH\Model.php(840): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\MahasiswaController.php(51): CodeIgniter\Model->__call('get', [])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\MahasiswaController->fetch()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MahasiswaController))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\HP\\Desktop\\Bintang Fajar Julio_2007411033_CI UTS\\public\\index.php')
+CRITICAL - 2023-05-16 13:09:33 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::gerResultArray()
+in APPPATH\Controllers\MahasiswaController.php on line 51.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\MahasiswaController->fetch()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MahasiswaController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\HP\\Desktop\\Bintang Fajar Julio_2007411033_CI UTS\\public\\index.php')
+CRITICAL - 2023-05-16 13:09:52 --> Cannot use object of type stdClass as array
+in APPPATH\Controllers\MahasiswaController.php on line 72.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\MahasiswaController->fetch()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MahasiswaController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\HP\\Desktop\\Bintang Fajar Julio_2007411033_CI UTS\\public\\index.php')
+CRITICAL - 2023-05-16 13:10:00 --> Unsupported operand types: string + int
+in APPPATH\Controllers\MahasiswaController.php on line 71.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\MahasiswaController->fetch()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MahasiswaController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\HP\\Desktop\\Bintang Fajar Julio_2007411033_CI UTS\\public\\index.php')
+CRITICAL - 2023-05-16 13:10:08 --> Unsupported operand types: string + int
+in APPPATH\Controllers\MahasiswaController.php on line 71.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\MahasiswaController->fetch()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MahasiswaController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\HP\\Desktop\\Bintang Fajar Julio_2007411033_CI UTS\\public\\index.php')
+CRITICAL - 2023-05-16 13:10:18 --> Unsupported operand types: string + int
+in APPPATH\Controllers\MahasiswaController.php on line 71.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\MahasiswaController->fetch()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MahasiswaController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\HP\\Desktop\\Bintang Fajar Julio_2007411033_CI UTS\\public\\index.php')
+CRITICAL - 2023-05-16 13:12:54 --> Unsupported operand types: string + int
+in APPPATH\Controllers\MahasiswaController.php on line 71.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\MahasiswaController->fetch()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MahasiswaController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\HP\\Desktop\\Bintang Fajar Julio_2007411033_CI UTS\\public\\index.php')
+CRITICAL - 2023-05-16 13:13:16 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::getArrayResult()
+in APPPATH\Controllers\MahasiswaController.php on line 51.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\MahasiswaController->fetch()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MahasiswaController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\HP\\Desktop\\Bintang Fajar Julio_2007411033_CI UTS\\public\\index.php')
+CRITICAL - 2023-05-16 13:13:32 --> Cannot use object of type stdClass as array
+in APPPATH\Controllers\MahasiswaController.php on line 72.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\MahasiswaController->fetch()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MahasiswaController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\HP\\Desktop\\Bintang Fajar Julio_2007411033_CI UTS\\public\\index.php')
+CRITICAL - 2023-05-16 13:17:18 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::getArrayResult()
+in APPPATH\Controllers\MahasiswaController.php on line 51.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\MahasiswaController->fetch()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MahasiswaController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\HP\\Desktop\\Bintang Fajar Julio_2007411033_CI UTS\\public\\index.php')
+CRITICAL - 2023-05-16 13:20:18 --> Undefined array key "nama_prodi"
+in APPPATH\Controllers\MahasiswaController.php on line 74.
+ 1 APPPATH\Controllers\MahasiswaController.php(74): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama_prodi"', 'C:\\Users\\HP\\Desktop\\Bintang Fajar Julio_2007411033_CI UTS\\app\\Controllers\\MahasiswaController.php', 74)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\MahasiswaController->fetch()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MahasiswaController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\HP\\Desktop\\Bintang Fajar Julio_2007411033_CI UTS\\public\\index.php')
